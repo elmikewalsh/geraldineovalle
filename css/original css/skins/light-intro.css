@@ -1,0 +1,59 @@
+/*  Write your custom CSS in this file */
+html{
+	box-shadow:none;
+}
+body{
+	color:#ccc;
+}
+.intro-content h3{
+	color:#333;
+}
+.book{
+	box-shadow: 3px 1px 13px #ccc;
+}
+.cover::before{
+	background:#fff;
+}
+.intro-content{
+	color: #f7f7f7;
+	opacity: .85;
+}
+.intro-content h3{
+	font-style:normal;
+}
+.intro-content p{
+	color: #f7f7f7;
+}
+#page-corner{
+	opacity:.6;
+}
+.btn {
+	border:1px solid #f7f7f7;
+	color:#f7f7f7;
+}
+.btn:hover,
+.btn:active,
+.btn:active:focus {
+	color: #fff;
+}
+#book-1{
+	border-color:#CCC;
+}
+#aline{
+	background:#333;
+}
+.btn:after {
+	background:#888;
+}
+.effect-moveleft #top-wrapper::after{
+	background: rgba(0,0,0,0.2);
+}
+#menu-wrapper{
+	color:#f7f7f7;
+}
+#close-button{
+	color:#eee;
+}
+.outer-nav a{
+	color:#f7f7f7;
+}

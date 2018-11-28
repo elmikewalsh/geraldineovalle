@@ -1,0 +1,643 @@
+<?php
+	/*  start the output buffer  */
+function ob_html_compress($buf){
+    return preg_replace(array('/<!--(.*)-->/Uis',"/[[:blank:]]+/"),array('',' '),str_replace(array("\n","\r","\t"),'',$buf));
+}
+
+ob_start("ob_html_compress");
+?>
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> 
+    <meta name="description" content="Una cocinera, profesora y espiritu libre viviendo en la novena región de Chile. Siéntese libre abrir mi libro y ver lo que hay de nuevo." />
+    <meta name="keywords" content="Geraldine, Ovalle, cocinera, licanray, novena, region, 9a, talleres, conservas, diplomados, villarrica, libro" />
+    <meta name="author" content="Geraldine Ovalle">
+    
+    <title>Geraldine Ovalle | Cocinera</title>
+    
+    <!-- FAV and TOUCH ICONS -->
+    <link rel="shortcut icon" href="img/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/GO-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/GO-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/GO-72.png">
+    <link rel="apple-touch-icon-precomposed" href="img/ico/GO-57.png">
+
+    <script src="js/modernizr.custom.38010.js" async></script>
+<!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/selectivizr-min.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="js/say-no-to-ie8.js"></script>
+<![endif]-->    
+    
+    <!-- STYLES -->  
+<style>
+@font-face{font-family:'fontello';src:url(../fonts/fontello/fontello.eot?5190218);src:url(../fonts/fontello/fontello.eot?5190218#iefix) format("embedded-opentype"),url(../fonts/fontello/fontello.woff?5190218) format("woff"),url(../fonts/fontello/fontello.ttf?5190218) format("truetype"),url(../fonts/fontello/fontello.svg?5190218#fontello) format("svg");font-weight:400;font-style:normal}[class^="icon-"]:before{font-family:"fontello";font-style:normal;font-weight:400;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:.2em;text-align:center;font-variant:normal;text-transform:none;line-height:1em;margin-left:.2em}.icon-facebook:before{content:'\e805'}@font-face{font-family:'BebasNeue';src:url(../fonts/bebas/BebasNeue-webfont.eot);src:url(../fonts/bebas/BebasNeue-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/bebas/BebasNeue-webfont.woff) format("woff"),url(../fonts/bebas/BebasNeue-webfont.ttf) format("truetype"),url(../fonts/bebas/BebasNeue-webfont.svg#BebasNeue) format("svg");font-weight:400;font-style:normal}nav{display:block}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}h1{font-size:2em;margin:.67em 0}img{border:0}button{font-family:inherit;font-size:100%;margin:0;line-height:normal;text-transform:none;-webkit-appearance:button;cursor:pointer}button::-moz-focus-inner{border:0;padding:0}table{border-collapse:collapse;border-spacing:0}.bb-bookblock{width:400px;height:300px;margin:0 auto;position:relative;z-index:100;-webkit-perspective:1300px;-moz-perspective:1300px;perspective:1300px;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;backface-visibility:hidden}.bb-item{width:100%;height:100%;position:absolute;top:0;left:0;display:none;background:#fff}html,body{width:100%}p,a,button{font-size:.91em;color:#888}p{line-height:2em}a{color:#666;text-decoration:none}.main{margin:0 auto;max-width:1200px;width:100%;position:relative;height:100%}#main-loading{background:url(../img/necessity/loadinfo.net.gif);background-position:center;background-repeat:no-repeat;display:block;position:fixed;height:100%;width:100%;top:0;left:0;z-index:9999;background-color:#000;opacity:.6}.book{position:absolute;width:40%;height:80%;left:0;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;-webkit-perspective:1800px;perspective:1800px}.bb-custom-wrapper{position:fixed;top:0;left:0;padding:0 10px;width:100%;height:100%;border-width:3px 10px;border-style:solid}.bb-custom-wrapper::before,.bb-custom-wrapper::after{position:absolute;top:0;z-index:10;width:10px;height:100%;background:-webkit-linear-gradient(left,#ddd 33.33%,#f0f0f0 33.33%,#f0f0f0 66.66%,white 66.66%);background:linear-gradient(to right,#ddd 33.33%,#f0f0f0 33.33%,#f0f0f0 66.66%,white 66.66%);background-size:3px 100%;content:'';-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;backface-visibility:hidden}.bb-custom-wrapper::before{left:0}.bb-custom-wrapper::after{right:0}.bb-custom-wrapper .bb-bookblock{width:100%;height:100%;-webkit-perspective:2000px;perspective:2000px;background-color:#fff}.bb-custom-side{position:relative;float:left;overflow:hidden;width:50%;height:100%}.bb-custom-side::before{position:absolute;top:0;z-index:800;width:50px;height:100%;box-shadow:inset 30px 0 50px -20px rgba(0,0,0,0.1);content:''}.bb-custom-side:first-child::before{right:0;box-shadow:inset -1px 0 0 rgba(0,0,0,0.05),inset -30px 0 40px -20px rgba(0,0,0,0.15)}.ps-scrollbar-y-rail{z-index:900}a.bb-flip{position:absolute;z-index:1000;font-size:0;opacity:.68;-webkit-transition:opacity .3s;-moz-transition:opacity .3s;-o-transition:opacity .3s;transition:opacity .3s;width:34px;height:40px}.bb-nav-prev,.bb-nav-next{bottom:0}.bb-nav-prev{left:0}.bb-nav-next{right:0}a.menu-button{font-size:0;border:none;width:40px;height:40px;overflow:hidden;position:absolute;cursor:pointer;outline:none;z-index:6000;right:0;top:0;opacity:.6;-webkit-transition:opacity .3s;-moz-transition:opacity .3s;-o-transition:opacity .3s;transition:opacity .3s}a.menu-button>div{position:relative;display:block;background:#999;height:4px;float:right;padding:0;margin-top:5px;margin-right:8px;left:auto;-webkit-transition:width .3s ease-out;-moz-transition:width .3s ease-out;-o-transition:width .3s ease-out;transition:width .3s ease-out}.menu-button>div:nth-child(1){margin-top:8px;width:30px}.menu-button>div:nth-child(2){width:20px}.menu-button>div:nth-child(3){width:10px}.no-csstransforms3d .book{background:url(../img/cover-photographer.jpg);background:-webkit-linear-gradient(left,rgba(0,0,0,0.68) 0%,rgba(255,255,255,0.16) 15%,rgba(255,255,255,0.05) 100%),url(../img/cover-photographer.jpg),#333;background:linear-gradient(to right,rgba(0,0,0,0.68) 0%,rgba(255,255,255,0.16) 15%,rgba(255,255,255,0.1) 100%),url(../img/cover-photographer.jpg),#333;background-size:cover;background-repeat:no-repeat;background-position:top}#book-1{border-color:#333}.bb-custom-wrapper{z-index:2000;visibility:hidden;opacity:0;-webkit-transition:visibility 0 .5s;transition:visibility 0 .5s;-webkit-transform:scale(0.95);transform:scale(0.95)}#top-perspective{width:100%;height:100%;position:fixed;top:0;left:0;z-index:3000;visibility:hidden}#top-wrapper{width:90%;height:90%;position:absolute;top:5%;left:5%;z-index:20}.effect-moveleft #top-wrapper{-webkit-transition:-webkit-transform .4s;transition:transform .4s;-webkit-transform-origin:50% 50%;transform-origin:50% 50%}#book-1{position:relative}.effect-moveleft #top-wrapper::after{z-index:9000;background:rgba(0,0,0,0.6)}#top-wrapper::after{content:'';position:absolute;top:0;left:0;width:100%;height:0;opacity:0;background:rgba(0,0,0,0.2);-webkit-transition:opacity 0.4s,height 0 .4s;transition:opacity 0.4s,height 0 .4s}#menu-wrapper{position:absolute;height:80%;width:180px;z-index:1;top:10%;right:20%}.outer-nav{margin-top:50%;height:76%;position:relative;overflow:hidden;width:200%}.outer-nav a{display:block;white-space:nowrap;font-size:1.1em;text-transform:uppercase;margin:0 0 30px;color:#fff;-webkit-transition:color .3s;transition:color .3s;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;-webkit-transition:opacity .4s;transition:opacity .4s}#close-tip{top:1%;right:-30%;opacity:0;position:absolute;-webkit-transition:all .2s ease-out;-moz-transition:all .2s ease-out;-o-transition:all .2s ease-out;transition:all .2s ease-out}#menu-copy{font-size:1em;opacity:0;width:150%;position:absolute;bottom:2%;margin-left:15px;-webkit-transition:all 1s ease-out;-moz-transition:all 1s ease-out;-o-transition:all 1s ease-out;transition:all 1s ease-out}#close-button{display:block;height:1em;width:1em;font-weight:600;top:0;right:-5%;position:absolute;opacity:0;cursor:pointer;font-size:.1em;font-weight:100;line-height:1em;text-align:center;text-decoration:none;-webkit-transition:all .2s ease-out;-moz-transition:all .2s ease-out;-o-transition:all .2s ease-out;transition:all .2s ease-out}.effect-moveleft .outer-nav a{opacity:0;-webkit-transform:translateX(100px) translateZ(-1000px);transform:translateX(100px) translateZ(-1000px);-webkit-transition:-webkit-transform 0.4s,opacity .4s;transition:transform 0.4s,opacity .4s}*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{height:100%;box-shadow:0 0 130px 36px #000 inset;-webkit-font-smoothing:antialiased}::selection{color:#111;background:#ddd}::-moz-selection{color:#111;background:#ddd}body{font-family:'Open Sans',Arial,sans-serif;color:#888;background:#DDD;background:url(../img/background/linen.png)}.book{z-index:3;width:40%;height:90%;max-height:600px;box-shadow:3px 1px 9px #000}.content-wrapper{position:relative;overflow:hidden;width:100%;height:100%}#page-corner{z-index:21;position:absolute;height:50px;right:0;bottom:0;-webkit-backface-visibility:hidden;-moz-transition:height .2s ease-out;-webkit-transition:height .2s ease-out;-o-transition:height .2s ease-out;transition:height .2s ease-out}.intro-wrapper{position:absolute;display:block;height:200px;width:320px;right:5px;z-index:1}.intro-content{color:#FFF;opacity:.8}.intro-content h1{font-size:2.6em;font-weight:lighter;line-height:5px;font-family:'BebasNeue',Arial,sans-serif;font-style:normal;margin:0 0 25px}.intro-content p{opacity:.75;margin-top:15px;margin-bottom:20px;color:#FFF}#aline{display:block;height:1px;width:400px;background:#FFF;margin-left:-200px;margin-top:-5px;opacity:.2}.btn{font-family:inherit;background:none;cursor:pointer;padding:4px 40px;line-height:1.2em;display:inline-block;letter-spacing:1px;position:relative;border:1px solid #fff;color:#fff;border-radius:2px;opacity:.5;overflow:hidden;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}.btn:after{content:'';position:absolute;z-index:-1;width:100%;height:0;top:50%;left:50%;background:#fff;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s;-webkit-transform:translateX(-50%) translateY(-50%) rotate(45deg);-moz-transform:translateX(-50%) translateY(-50%) rotate(45deg);-ms-transform:translateX(-50%) translateY(-50%) rotate(45deg);transform:translateX(-50%) translateY(-50%) rotate(45deg)}#phone-menu{display:none}.container{padding:40px}.content-title{display:block;width:100%;position:relative}.content-title.title-2 h2{position:relative;z-index:1;background:#fff;display:table;padding:0 20px 0 10px}.content-title.title-2:after{content:"";display:block;height:6px;width:100%;background-color:#FFF;position:absolute;top:2em;margin-top:-3px;border-bottom:1px solid #ddd;border-top:1px solid #ddd;z-index:0}.content-title.title-2{text-align:left}.content-title.title-3{margin-top:30px;margin-bottom:20px}.content-title.title-3:after{content:"";display:block;height:1px;width:100%;background-color:#DDD;position:absolute;top:.6em;z-index:0}.content-title.title-3 h3{font-size:1.2em;font-family:'Alegreya Sans',Verdana,Geneva,sans-serif;color:#333;position:relative;z-index:1;background:#fff;display:table;padding:0 10px;text-transform:uppercase}.book-timeline{list-style:none;position:relative;-webkit-padding-start:0;padding:0 10px;margin-bottom:80px}.book-timeline:before{content:'';position:absolute;top:0;bottom:0;width:1px;background:#ddd;left:23%;margin-top:10px;margin-left:9px}.book-timeline > li{position:relative}.book-timeline > li .time-data{display:block;position:absolute;color:#999;font-size:1.1em;font-family:'Marvel',Verdana,Geneva,sans-serif;padding:4px 8px;border:1px dashed #ddd;border-radius:4px}.book-timeline > li .time-dot{display:block;height:8px;width:8px;margin-top:10px;padding-right:3px;background-color:#FFF;position:absolute;left:23%;border-radius:50%;border:1px solid #DDD}.book-timeline > li .time-block{margin:0 0 30px 30%;position:relative}.book-timeline > li .time-block h4{font-weight:600;-webkit-margin-after:0;-webkit-margin-after:.6em;color:#666}.book-timeline > li .time-block h5{margin-top:0;color:#aaa;margin-bottom:0}.some-intro{padding:0 20px 20px}#portfolio-container{width:100%;height:auto;margin:auto;display:table;margin-bottom:50px}.portfolio-filters{padding-left:0;display:table;margin:auto;width:auto;margin-bottom:30px}.portfolio-filters li{list-style:none;float:left;font-family:'BebasNeue',Arial,sans-serif;font-size:1.3em;text-transform:uppercase;margin-right:20px;cursor:pointer;color:#888;-moz-transition:all .3s ease-out;-webkit-transition:all .3s ease-out;-o-transition:all .3s ease-out;transition:all .3s ease-out}.portfolio-filters li.active{color:#666;text-decoration:underline}#portfolio-container .portfolio-item{width:50%;float:left;max-height:180px;position:relative;overflow:hidden}.portfolio-item .mask{cursor:pointer;width:100%;height:100%;position:absolute;top:0;left:0;overflow:hidden;visibility:hidden;color:#fff;background:#111;opacity:0;padding:20px;padding-top:160px;-moz-transition:all .3s ease-out;-webkit-transition:all .3s ease-out;-o-transition:all .3s ease-out;transition:all .3s ease-out}.portfolio-item .mask > a > h4{margin-top:0;margin-bottom:10px;color:#fff}.portfolio-item .mask > a{color:#CCC;font-size:.9em;opacity:.7;-moz-transition:all .3s ease-out;-webkit-transition:all .3s ease-out;-o-transition:all .3s ease-out;transition:all .3s ease-out}.portfolio-item .mask a.fancybox{display:block;cursor:pointer;width:100%;height:80px;overflow:hidden}.portfolio-item .mask a > i{font-size:.9em;margin-right:5px}#portfolio-container .portfolio-item img{display:block;position:relative;width:100%;height:auto;overflow:hidden;-moz-transition:all .3s ease-out;-webkit-transition:all .3s ease-out;-o-transition:all .3s ease-out;transition:all .3s ease-out}.blog-wrapper{width:90%;margin:auto}.blog-item{margin-bottom:50px}.blog-item img{display:block;position:relative;width:auto;max-width:100%;height:auto}.blog-item a{color:#666}.blog-item h3{margin-bottom:.4em}.blog-item a.read-more{display:block;position:relative;font-style:italic;color:#999;font-size:.9em;-moz-transition:all .3s ease-out;-webkit-transition:all .3s ease-out;-o-transition:all .3s ease-out;transition:all .3s ease-out}.blog-item a.read-more:after{content:'';position:absolute;right:0;height:1px;width:75%;background:#eee;margin-top:10px;z-index:1}#contact-info{margin-left:5%;position:relative;font-size:14px}#contact-info:before{position:absolute;top:0;bottom:0;width:1px;background:#eee}#contact-info tbody{margin-left:10px}table > tbody > tr{line-height:2em}table > tbody > tr > td{color:#888}table > tbody > tr > td.td-title{width:30%;color:#999}ul.social{list-style:none;padding-left:0;display:table;margin:25px auto 0}ul.social li{float:left;display:block;width:2.5em}ul.social a{width:100%;height:100%}ul.social li i{font-size:1.4em;line-height:2em;color:#bbb;-moz-transition:all .3s ease-out;-webkit-transition:all .3s ease-out;-o-transition:all .3s ease-out;transition:all .3s ease-out}.fullpage-img{height:100%;width:100%}.fullpage-img img{max-width:100%}.center{text-align:center}img.center{display:block;margin-left:auto;margin-right:auto}.margin-top{margin-top:2em}.no-csstransforms3d .book{background:url(../../img/cover-illustrator.jpg);background:-webkit-linear-gradient(left,rgba(0,0,0,0.2) 0%,rgba(255,255,255,0.09) 25%,rgba(255,255,255,0.1) 100%),url(../../img/cover-illustrator.png),#191919;background:linear-gradient(to right,rgba(0,0,0,0.2) 0%,rgba(255,255,255,0.09) 25%,rgba(255,255,255,0.1) 100%),url(../../img/cover-illustrator.png),#191919;background-size:cover;background-repeat:no-repeat;background-position:top}.content-title.title-2 h2{font-family:'BebasNeue',Arial,Helvetica,sans-serif;font-size:4em;font-weight:300;color:#555;margin-top:30px;margin-bottom:30px}.content-title.title-3 h3{font-family:'BebasNeue',Arial,Helvetica,sans-serif;color:#555;font-size:1.3em;margin-bottom:40px}.intro-content p{font-size:14px}.content-title h2{font-family:'BebasNeue',Arial,sans-serif;text-transform:normal}.book-timeline > li .time-data{font-family:'BebasNeue',Arial,Helvetica,sans-serif}.symple-button{border:none;border-radius:3px 3px 3px 3px;box-shadow:none;cursor:pointer;display:inline-block;margin:5px 5px 5px 0;text-align:center;text-decoration:none!important;text-shadow:none;white-space:nowrap}.symple-button span.symple-button-inner{border-top:none;border-radius:5px 5px 5px 5px;color:#FFF;display:block;font-weight:700;line-height:.8em;padding:1.1em 1.4em;text-align:center;text-decoration:none;text-shadow:none;white-space:nowrap;vertical-align:bottom}.symple-button.green span.symple-button-inner{border-top:none}.symple-button.green{background:none repeat scroll 0 0 #409F89;border:none;color:#FFF}html{box-shadow:none}.book{box-shadow:3px 1px 13px #ccc}.intro-content{color:#f7f7f7;opacity:.85}.intro-content p{color:#f7f7f7}#page-corner{opacity:.6}.btn{border:1px solid #f7f7f7;color:#f7f7f7}#book-1{border-color:#CCC}#aline{background:#333}.btn:after{background:#888}.effect-moveleft #top-wrapper::after{background:rgba(0,0,0,0.2)}#menu-wrapper{color:#f7f7f7}#close-button{color:#eee}.outer-nav a{color:#f7f7f7}@media screen and (max-width: 350px){.intro-content h1{font-family:'BebasNeue',Arial,Helvetica,sans-serif;font-style:normal;text-transform:uppercase;font-weight:400;font-size:2em}}@media screen and (max-width: 768px){.main{width:95%;position:relative;height:95%}.book{width:100%;height:100%;position:absolute;max-height:1000px}.intro-wrapper{z-index:40;left:30px;margin-top:20%;width:90%;color:#FFF}#aline{width:100%;margin-left:0}.intro-content{width:80%;max-width:90%;display:block;position:absolute;z-index:100;text-shadow:1px 1px 1px #000}#open-it{width:45%;padding:5px 10px;display:block;text-align:center}.intro-content p{opacity:.8}.btn{opacity:.8}.bb-custom-side{position:static;float:none;width:100%;height:auto}body{height:auto;width:auto;overflow:visible;overflow-x:hidden}#top-perspective{position:relative;height:auto;width:100%;display:none}#top-wrapper{position:static;height:auto;margin:auto;width:100%;max-width:630px}#book-1{position:static;height:auto;padding:0;border:none}.bb-custom-wrapper .bb-bookblock{height:auto;float:none;min-height:680px;background:#FFF}.bb-item{position:static;height:auto;min-height:680px}.bb-custom-side::before{content:none}.bb-custom-wrapper::before,.bb-custom-wrapper::after{content:none}#menu-wrapper{margin-top:30px;right:5%;display:none}#close-button{right:5%}#menu-copy{position:fixed}#phone-menu{position:fixed;top:0;left:0;visibility:visible;height:40px;width:100%;background:#FFF;opacity:.8;z-index:60}.book-timeline > li .time-data{font-size:1em;font-family:'BebasNeue',Verdana,Geneva,sans-serif;padding:3px 0;border:none;width:20%;display:block}.outer-nav{height:auto}.outer-nav a{font-size:1.1em}}@media (min-width: 769px) and (max-width: 992px){.bb-custom-wrapper{font-size:90%}.main{width:80%}.book{width:45%;max-height:460px}.intro-wrapper{right:5px}#menu-wrapper{right:10%}.book-timeline > li .time-data{left:-2%}.portfolio-item .mask > a.fancybox{display:none}}@media (min-width: 992px) and (max-width: 1200px){.main{width:80%}.book{width:45%}.intro-wrapper{right:20px}#menu-wrapper{right:12%}.portfolio-item .mask > a.fancybox{height:60px}}@media (min-width: 1201px) and (max-width: 1300px){.main{width:70%;max-width:900px}.book{width:43%;min-width:360px}.intro-wrapper{right:20px}#top-wrapper{max-width:1100px;max-height:760px}#menu-wrapper{right:13%}}@media (min-width: 1301px){.main{width:60%;max-width:900px}.book{width:43%;min-width:360px}.intro-wrapper{right:20px}#top-wrapper{max-width:1160px;max-height:800px}.portfolio-item .mask > a.fancybox{height:80px}#menu-wrapper{right:15%}}@media screen and (max-height: 500px){#menu-wrapper{top:36%}#menu-copy{bottom:-30%}}.ps-container .ps-scrollbar-x-rail{position:absolute;bottom:3px;height:8px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;opacity:0;filter:alpha(opacity=0);-o-transition:background-color .2s linear,opacity .2s linear;-webkit-transition:background-color.2s linear,opacity .2s linear;-moz-transition:background-color .2s linear,opacity .2s linear;transition:background-color .2s linear,opacity .2s linear}.ps-container .ps-scrollbar-y-rail{position:absolute;right:3px;width:8px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;opacity:0;filter:alpha(opacity=0);-o-transition:background-color .2s linear,opacity .2s linear;-webkit-transition:background-color.2s linear,opacity .2s linear;-moz-transition:background-color .2s linear,opacity .2s linear;transition:background-color .2s linear,opacity .2s linear}.ps-container .ps-scrollbar-x{position:absolute;bottom:0;height:8px;background-color:#aaa;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-o-transition:background-color .2s linear;-webkit-transition:background-color.2s linear;-moz-transition:background-color .2s linear;transition:background-color .2s linear}.ps-container .ps-scrollbar-y{position:absolute;right:0;width:8px;background-color:#aaa;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-o-transition:background-color .2s linear;-webkit-transition:background-color.2s linear;-moz-transition:background-color .2s linear;transition:background-color .2s linear}html{box-shadow:none}body{color:#ccc}.book{box-shadow:3px 1px 13px #ccc}.intro-content{color:#f7f7f7;opacity:.85}.intro-content p{color:#f7f7f7}#page-corner{opacity:.6}.btn{border:1px solid #f7f7f7;color:#f7f7f7}#book-1{border-color:#CCC}#aline{background:#333}.btn:after{background:#888}.effect-moveleft #top-wrapper::after{background:rgba(0,0,0,0.2)}#menu-wrapper{color:#f7f7f7}#close-button{color:#eee}.outer-nav a{color:#f7f7f7}body{background:url(../img/background/linen.png);background-repeat:repeat;font-family:'Open Sans',Arial,Helvetica,sans-serif}.no-csstransforms3d .book{background:url(../img/cover-illustrator.png);background:-webkit-linear-gradient(left,rgba(0,0,0,0.2) 0%,rgba(255,255,255,0.09) 25%,rgba(255,255,255,0.1) 100%),url(../img/cover-illustrator.png),#191919;background:linear-gradient(to right,rgba(0,0,0,0.2) 0%,rgba(255,255,255,0.09) 25%,rgba(255,255,255,0.1) 100%),url(../img/cover-illustrator.png),#191919;background-size:cover;background-repeat:no-repeat;background-position:top}.content-title.title-2 h2{font-family:'BebasNeue',Arial,Helvetica,sans-serif;font-size:4em;font-weight:300;color:#555;margin-top:30px;margin-bottom:30px}.content-title.title-3 h3{font-family:'BebasNeue',Arial,Helvetica,sans-serif;color:#555;font-size:1.3em;margin-bottom:40px}.intro-content p{font-size:14px}.content-title h2{font-family:'BebasNeue',Arial,sans-serif;text-transform:normal}.book-timeline > li .time-data{font-family:'BebasNeue',Arial,Helvetica,sans-serif}.book-timeline > li .time-block h5 a{border-bottom:1px dotted #666}.portfolio-item .mask > a.fancybox{cursor:pointer}a.more{display:block;height:80px;max-height:100%}
+</style>
+
+
+
+</head>
+
+<body>
+ 
+<div id="main-loading"></div>
+    
+<div id="scroll-wrap" class="main">
+
+    <div class="book" data-book="book-1"><!-- Small Book -->
+        <a href="#"><img src="img/necessity/page-corner.png" id="page-corner" alt="corner" /></a>
+    </div> 
+    
+    <div class="intro-wrapper">
+          <div class="intro-content">
+              <h1>Geraldine Ovalle</h1>
+              <div id="aline"></div>
+              <p>Yo soy.</br>
+Y desde la cocina hago mi aporte al mundo.
+</p>
+              <button id="open-it" class="btn">Leer mi libro</button>
+          </div>
+    </div>
+    
+</div><!-- /scroll-wrap -->        
+
+        
+<div id="top-perspective" class="effect-moveleft"><!-- Fullscreen BookBlock -->
+	<div id="top-wrapper">           
+		<div class="bb-custom-wrapper" id="book-1">
+			<div class="bb-bookblock">
+
+            
+                <div class="bb-item"> <!--page-1~2:start-->
+                         
+                    <div class="bb-custom-side"> <!--page-1:start-->
+                        <div class="content-wrapper">
+                            <div class="container">
+                                
+                                <div class="fullpage-img">
+                            		<img src="img/portadas/geral-paragua.png" alt="image" class="center" />
+                                </div>
+                           
+                            </div><!--container 1-->
+                        </div><!--content-wrapper 1-->
+                    </div><!--bb-custom-side page-1:end-->                                     
+
+                    <div class="bb-custom-side"><!--page-2:start-->
+                        <div class="content-wrapper">
+                            <div class="container">
+
+                                <div class="content-title title-2"><h2>Sobre mi</h2></div>
+                                
+                                <p class="some-intro">Yo soy.</br>
+Y desde la cocina hago mi aporte al mundo.
+</p>
+
+                                <div class="content-title title-3"><h3>Mi Currículum</h3></div>
+								
+                                <ul class="book-timeline">
+                                    <li>
+                                        <span class="time-data">2014</span>
+                                        <div class="time-dot"></div>
+                                        <div class="time-block">
+                                            <h4>Responsable del proyecto, Fondart Regional</h4>
+                                            <h5><a href="//www.fondosdecultura.cl/" target="_blank">FONDART 2014, Chile</a></h5>
+                                            <p>Desarrollo de un proyecto financiado por FONDART 2014, en Patrimonio inmaterial culinario “HUELLAS Y SABORES DE MUJERES EN LA CORDILLERA” En proceso de término.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="time-data">2013</span>
+                                        <div class="time-dot"></div>
+                                        <div class="time-block">
+                                            <h4>Compiladora, Libro: Ruta Newenche</h4>
+                                            <h5><a href="//villarrica.uc.cl/" target="_blank">Universidad Católica Villarrica</a></h5>
+                                            <p>Elaboración de un recetario del trabajo de investigación patrimonial
+gastronómica de los participantes del NODO de Turismo Rural, ruta Villarrica Lican-Ray.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="time-data">2012</span>
+                                        <div class="time-dot"></div>
+                                        <div class="time-block">
+                                            <h4>Coordinadora</h4>
+                                            <h5><a href="//villarrica.uc.cl/" target="_blank">Universidad Católica Villarrica</a></h5>
+                                            <p>Coordinadora y relatora de la etapa de especialización del NODO de Turismo
+ruta Villarrica Lican Ray, PUC Villarrica.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="time-data">2012</span>
+                                        <div class="time-dot"></div>
+                                        <div class="time-block">
+                                            <h4>Relator</h4>
+                                            <h5>Independiente</h5>
+                                            <p>Proyecto de recuperación patrimonial a través de la cocina, diseñando y coordinando el programa y realizando algunas relatorias, para las comunidades Colotue en Liquiñe, y Jose Luis Caniulef Afunalhue.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="time-data">2009 – 2011</span>
+                                        <div class="time-dot"></div>
+                                        <div class="time-block">
+                                            <h4>Profesora</h4>
+                                            <h5><a href="//villarrica.uc.cl/" target="_blank">Universidad Católica Villarrica</a></h5>
+                                            <p>Clases particulares de cocina.</p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <span class="time-data">2008</span>
+                                        <div class="time-dot"></div>
+                                        <div class="time-block">
+                                            <h4>Docente</h4>
+                                            <h5><a href="//www.inacap.cl/tportalvp/chillan/" target="_blank">Inacap, Chillan</a></h5>
+                                            <p>Docente de tecnología de los alimentos, y taller de cocina.</p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <span class="time-data">2008</span>
+                                        <div class="time-dot"></div>
+                                        <div class="time-block">
+                                            <h4>Docente</h4>
+                                            <h5><a href="//villarrica.uc.cl/" target="_blank">Universidad Católica Villarrica</a></h5>
+                                            <p>Docente del primer diplomado Gastronomía con Identidad Local.</p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <span class="time-data">2007</span>
+                                        <div class="time-dot"></div>
+                                        <div class="time-block">
+                                            <h4>Docente</h4>
+                                            <h5><a href="//villarrica.uc.cl/" target="_blank">Universidad Católica Villarrica</a></h5>
+                                            <p>Clases de panificación en el diplomado de Gastronomía con Identidad Local.</p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <span class="time-data">2000 – 2007</span>
+                                        <div class="time-dot"></div>
+                                        <div class="time-block">
+                                            <h4>Administradora</h4>
+                                            <h5><a href="//www.elcircodelmundo.com/" target="_blank">El Circo del Mundo, Chile</a></h5>
+                                            <p>Administrativo de la institución El Circo del Mundo.</p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <span class="time-data">2001</span>
+                                        <div class="time-dot"></div>
+                                        <div class="time-block">
+                                            <h4>Encargada</h4>
+                                            <h5>Santiago Chile</h5>
+                                            <p>Encargada de cuarto de pasta en la tratoria Santiago Chile.</p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <span class="time-data">1999 – 2000</span>
+                                        <div class="time-dot"></div>
+                                        <div class="time-block">
+                                            <h4>Garzón</h4>
+                                            <h5>Quito Ecuador, y Cartagena de Indias, Colombia</h5>
+                                            <p>Garzón en Quito Ecuador, y Cartagena de Indias Colombia.</p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <span class="time-data">1998 – 1999</span>
+                                        <div class="time-dot"></div>
+                                        <div class="time-block">
+                                            <h4>Encargada</h4>
+                                            <h5>Coco Pacheco</h5>
+                                            <p>Encargada de taller exploratorio de cocina Coco Pacheco, y encargada de eventos.</p>
+                                        </div>
+                                    </li>                                    
+                                </ul>
+                               
+								<div class="content-title title-3"><h3>Educación</h3></div>
+                               
+                                <ul class="book-timeline">
+                                    <li>
+                                        <span class="time-data">2007 - 2008</span>
+                                        <div class="time-dot"></div>
+                                        <div class="time-block">
+                                            <h4>Diplomado de Turismo Chile emprende</h4>
+                                            <h5><a href="//villarrica.uc.cl/" target="_blank">Universidad Católica Villarrica</a></h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="time-data">1995 - 2003</span>
+                                        <div class="time-dot"></div>
+                                        <div class="time-block">
+                                            <h4>Estrategias y herramientas para el trabajo
+en equipo</h4>
+                                            <h5><a href="//www.tironi.cl/" target="_blank">Universidad Católica Villarrica</a></h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="time-data">2000</span>
+                                        <div class="time-dot"></div>
+                                        <div class="time-block">
+                                            <h4>Especialización en Panadería y Bollería</h4>
+                                            <h5><a href="//www.inacap.cl/" target="_blank">Instituto Inacap</a></h5>
+
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <span class="time-data">1996 - 1998</span>
+                                        <div class="time-dot"></div>
+                                        <div class="time-block">
+                                            <h4>Administración y producción gastronómica
+Mención cocina Internacional</h4>
+                                            <h5>Instituto Inacap, sede Chesterton Santiago</h5>
+
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <span class="time-data">1996</span>
+                                        <div class="time-dot"></div>
+                                        <div class="time-block">
+                                            <h4>Curso de Ingles</h4>
+                                            <h5><a href="//www.britanico.cl/" target="_blank">Instituto Chileno Británico de Cultura</a></h5>
+                                         
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <span class="time-data">1995 - 1996</span>
+                                        <div class="time-dot"></div>
+                                        <div class="time-block">
+                                            <h4>Curso de computación y
+herramientas computacionales</h4>
+                                            <h5><a href="//www.uchile.cl/" target="_blank">Universidad de Chile</a></h5>
+
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <span class="time-data">1993 – 1994</span>
+                                        <div class="time-dot"></div>
+                                        <div class="time-block">
+                                            <h4>1º y 2º año de Derecho</h4>
+                                            <h5><a href="//www.ucentral.cl/" target="_blank">Universidad Central Santiago, Chile</a></h5>
+                                        
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <span class="time-data">1992</span>
+                                        <div class="time-dot"></div>
+                                        <div class="time-block">
+                                            <h4>Secundaria</h4>
+                                            <h5>Oxford College</h5>
+
+                                        </div>
+                                    </li>                                    
+                                </ul>
+                                                               
+                                    
+                              </div><!--container 2-->
+                        </div><!--content-wrapper 2-->
+                    </div><!--bb-custom-side page-2:end-->
+                    
+                </div><!--bb-item-page 1~2:end-->
+
+               
+                <div class="bb-item"> <!--page-3~4:start-->
+                        
+                    <div class="bb-custom-side"> <!--page-3:start--> 
+                        <div class="content-wrapper">
+                            <div class="container">
+                                
+                                <div class="content-title title-2"><h2>Escritos</h2></div>
+                                
+                                <div class="fullpage-img">
+                            		<img src="img/portadas/portada-lapiz-pluma.png" alt="image" class="center" />
+                                </div>
+                           
+                            </div><!--container 3-->
+                        </div><!--content-wrapper 3-->
+                    </div><!--bb-custom-side page-3:end-->                                     
+
+                    <div class="bb-custom-side"><!--page-4:start-->
+                        <div class="content-wrapper">
+                            <div class="container">
+
+                                <div class="blog-wrapper">
+
+                                	<div class="blog-item">
+                                                                           
+                                        <a href="escrito-07.html"><h3 class="center">El Café</h3></a>
+
+                                    	<a class="blog-banner" target="_self" href="escrito-07.html">
+                                    		<img class="center" src="img/escritos/escrito7d.jpg" alt="blogimg" />
+                                        </a>
+
+                                        <p class="article">Aaaa, café. Bencina de la mañana. Invitado a muchas reuniones sociales. Se encuentra en tantas diferentes maneras: caliente, frío, natural, orgánico, procesado, dulce, amargo...</p>
+                                        <a class="read-more" href="escrito-07.html">Leer más</a>
+                                    </div>
+
+                                	<div class="blog-item">
+                                                                           
+                                        <a href="escrito-06.html"><h3 class="center">La Papa Meñarki</h3></a>
+
+                                    	<a class="blog-banner" target="_self" href="escrito-06.html">
+                                    		<img class="center" src="img/escritos/escrito6a.jpg" alt="blogimg" />
+                                        </a>
+
+                                        <p class="article">Existen varios tipos o variedades de este tubérculo, en la Araucania destacando la papa meñarky por su forma y colores. Esta papa se cultiva mucho aquí; es mas estas son de mi primera huertita que hicimos en familia.</p>
+                                        <a class="read-more" href="escrito-06.html">Leer más</a>
+                                    </div>
+
+                                	<div class="blog-item">
+                                                                           
+                                        <a href="escrito-05.html"><h3 class="center">El Changle</h3></a>
+
+                                    	<a class="blog-banner" target="_self" href="escrito-05.html">
+                                    		<img class="center" src="img/escritos/escrito5a.jpg" alt="blogimg" />
+                                        </a>
+
+                                        <p class="article">Changle que cientificamente es conocido con un nombre largo y complicado como (CLAVARIA CORALLOIDES, RAMARIA FLAVIA, RAMARIA VALDIVIANA) Tres especies que reciben este nombre común y de aspecto muy similar, que crecen en el piso de los bosques de hualles, (robles jóvenes) y otros árboles del género de los Nothofagus.</p>
+                                        <a class="read-more" href="escrito-05.html">Leer más</a>
+                                    </div>
+
+                                	<div class="blog-item">
+                                                                           
+                                        <a href="escrito-04.html"><h3 class="center">Las Marraquetas</h3></a>
+
+                                    	<a class="blog-banner" target="_self" href="escrito-04.html">
+                                    		<img class="center" src="img/escritos/escrito4a.jpg" alt="blogimg" />
+                                        </a>
+
+                                        <p class="article">Yo no he viajado a Europa donde la tradición panadera es antigua y exquisita. Hoy en día existe la posibilidad de probar panes italianos y franceses por esto de la globalización, pero sin duda eso no alcanza más que para entender un formato de pan, más no el alma de un pan o masita.</p>
+                                        <a class="read-more" href="escrito-04.html">Leer más</a>
+                                    </div>
+                                
+                                	<div class="blog-item">
+                                                                           
+                                        <a href="escrito-03.html"><h3 class="center">Dihueñes</h3></a>
+
+                                    	<a class="blog-banner" target="_self" href="escrito-03.html">
+                                    		<img class="center" src="img/escritos/escrito3a.jpg" alt="blogimg" />
+                                        </a>
+
+                                        <p class="article">El dihueñe es un parasito del reino de los hongos asociados específicamente al género de los nothofagus (hualles y pellines), pero también yo los he visto en el coihue pero le llaman a ese hongo llao llao, de aspecto similar al dihueñe, pero más dulce y parece más húmedo.</p>
+                                        <a class="read-more" href="escrito-03.html">Leer más</a>
+                                    </div>
+                                
+                                	<div class="blog-item">
+                                                                           
+                                        <a href="escrito-02.html"><h3 class="center">La Kinwa</h3></a>
+
+                                    	<a class="blog-banner" target="_blank" href="escrito-02.html">
+                                    		<img class="center" src="img/escritos/escrito2b.jpg" alt="blogimg" />
+                                        </a>
+
+                                        <p class="article">Quinua Quinoa. Dawe Zawe. La Kinwa. Todos estos nombres para un solo producto, imagino que tiene muchos más, como su diversidad genética, es que es un planta muy versátil, en el sentido que se adapta a distintos climas, distintas alturas de cultivo,  en fin es muy vivaracha esta Kinwa, es más los estudios dicen que aún no es un planta totalmente domesticada, puede siempre darnos sorpresas.</p>
+                                        <a class="read-more" href="escrito-02.html">Leer más</a>
+                                    </div>
+                                    
+                                	<div class="blog-item">
+                                                                           
+                                        <a href="escrito-01.html"><h3 class="center">El Piñon</h3></a>
+
+                                    	<a class="blog-banner" target="_blank" href="escrito-01.html">
+                                    		<img class="center" src="img/escritos/escrito1c.jpg" alt="blogimg" />
+                                        </a>
+
+                                        <p class="article">Hablar del piñon no es tan simple como yo me imaginaba, o sea sentarme y solo escribir lo vivido a través de esta semilla. Pero hay tantos detalles tanta información que está adherida a esta semilla, tantos contextos históricos que dan material para compartir de este alimento en particular.</p>
+                                        <a class="read-more" href="escrito-01.html">Leer más</a>
+                                    </div>
+
+                                                                    	
+                                </div>
+
+                                
+                                                            
+                                    
+                              </div><!--container 4-->
+                        </div><!--content-wrapper 4-->
+                    </div><!--bb-custom-side page-4:end-->
+                    
+                </div><!--bb-item-page 3~4:end-->
+               
+                
+                <div class="bb-item"><!--page:5~6:start-->
+
+
+                    <div class="bb-custom-side"> <!--page-5:start--> 
+                        <div class="content-wrapper">
+                            <div class="container">
+                            
+                            	<div class="content-title title-2"><h2>Trabajos</h2></div>
+                                
+                                <div class="fullpage-img">
+                            		<img src="img/portadas/proyectos.png" alt="image" class="center" />
+                                </div>
+                           
+                            </div><!--container 5-->
+                        </div><!--content-wrapper 5-->
+                    </div><!--bb-custom-side page-5:end-->  
+                	
+                    <div class="bb-custom-side"><!--page-6:start-->
+                        <div class="content-wrapper">
+                            <div class="container"> 
+                                
+                                <ul class="portfolio-filters">
+                                    <li class="portfolio-item" data-filter="*">Todos</li>
+                                    <li class="clases-ind" data-filter=".clases-ind">Clases Ind</li>
+                                    <li class="diplomados" data-filter=".diplomados">Diplomados</li>
+                                    <li class="talleres" data-filter=".talleres">Talleres</li>
+                                    <li class="libros" data-filter=".libros">Libros</li>
+                                </ul>
+                                
+                                <div id="portfolio-container">
+                                
+                                    <div class="portfolio-item libros">
+                                        <img src="img/proyectos/recetario.jpg" alt="portfolio" />
+                                        <div class="mask">
+                                        	<a href="trabajo-07.html" target="_self" rel="portfolio" class="fancybox">
+                                                <h4>Recetario: Sabores y Saberes</h4>
+                                            </a>
+                                            <a href="trabajo-07.html" target="_self" class="more"><i class="fa fa-info-circle"></i><span>Leer más</span></a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="portfolio-item talleres">
+                                        <img src="img/proyectos/proyecto6a-small.jpg" alt="portfolio" />
+                                        <div class="mask">
+                                        	<a href="trabajo-06.html" target="_self" rel="portfolio" class="fancybox">
+                                                <h4>Taller: Una Experiencia de Cocina: Desde El Sur</h4>
+                                            </a>
+                                            <a href="trabajo-06.html" target="_self" class="more"><i class="fa fa-info-circle"></i><span>Leer más</span></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="portfolio-item talleres">
+                                        <img src="img/proyectos/proyecto5a-small.jpg" alt="portfolio" />
+                                        <div class="mask">
+                                        	<a href="trabajo-05.html" target="_self" rel="portfolio" class="fancybox">
+                                                <h4>Taller de Cocina: Santiago</h4>
+                                            </a>
+                                            <a href="trabajo-05.html" target="_self" class="more"><i class="fa fa-info-circle"></i><span>Leer más</span></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="portfolio-item clases-ind">
+                                        <img src="img/proyectos/proyecto4a-small.jpg" alt="portfolio" />
+                                        <div class="mask">
+                                        	<a href="trabajo-04.html" target="_self" rel="portfolio" class="fancybox">
+                                                <h4>Clases: Comunidad Colotúe</h4>
+                                            </a>
+                                            <a href="trabajo-04.html" target="_self" class="more"><i class="fa fa-info-circle"></i><span>Leer más</span></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="portfolio-item clases-ind">
+                                        <img src="img/proyectos/proyecto3b-small.jpg" alt="portfolio" />
+                                        <div class="mask">
+                                        	<a href="trabajo-03.html" target="_self" rel="portfolio" class="fancybox">
+                                                <h4>Clases: Comunidad José Luis Caniulef</h4>
+                                            </a>
+                                            <a href="trabajo-03.html" target="_self" class="more"><i class="fa fa-info-circle"></i><span>Leer más</span></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="portfolio-item clases-ind">
+                                        <img src="img/proyectos/proyecto2a-small.jpg" alt="portfolio" />
+                                        <div class="mask">
+                                        	<a href="trabajo-02.html" target="_self" rel="portfolio" class="fancybox">
+                                                <h4>Clases de Servicio: Kurarrewe</h4>
+                                            </a>
+                                            <a href="trabajo-02.html" target="_self" class="more"><i class="fa fa-info-circle"></i><span>Leer más</span></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="portfolio-item diplomados">
+                                        <img src="img/proyectos/proyecto1a-small.jpg" alt="portfolio" />
+                                        <div class="mask">
+                                        	<a href="trabajo-01.html" target="_self" rel="portfolio" class="fancybox">
+                                                <h4>Primer y Segundo Diplomados</h4>
+                                            </a>
+                                            <a href="trabajo-01.html" target="_self" class="more"><i class="fa fa-info-circle"></i><span>Leer más</span></a>
+                                        </div>
+                                    </div>
+                                                                                                            
+                                </div><!--portfolio-container-->  
+           	
+                            </div><!--container 6-->
+                        </div><!--content-wrapper 6-->
+                    </div><!--bb-custom-side page-6:end-->
+                    
+                    
+                </div><!--bb-item-page 5~6:end-->
+                
+                
+				<div class="bb-item"><!--page:7~8:start-->
+                
+                    <div class="bb-custom-side"><!--page-7:start-->
+                        <div class="content-wrapper">
+                            <div class="container">
+    
+                                <div class="fullpage-img">
+                            		<img src="img/portadas/GeralLogoBN.png" alt="image" class="center" />
+                                </div>
+                                    
+                            </div><!--container 7-->
+                        </div><!--content-wrapper 7-->
+                    </div><!--bb-custom-side page-7:end-->
+                    
+                    <div class="bb-custom-side"><!--page-8:start-->
+                        <div class="content-wrapper">
+                            <div class="container">
+                            
+                                <div class="content-title title-2"><h2>Contacto</h2></div>
+
+<p>Si tienes una idea para una clase, taller o proyecto, o simplemente quieres decirme hola, puedes enviarme un email o visítame en Facebook</p>
+                              
+                                                      
+                                <table id="contact-info">
+                                    <tbody>
+                                        <tr>
+                                            <td class="td-title">Dirección:</td><td>Casilla 638, Licanray, CHILE</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td-title">Email:</td><td>soy@geraldineovalle.com</td>
+                                        </tr>                                            
+                                    </tbody>
+                                </table>
+                                
+                                <!-- SOCIAL -->
+                                <ul class="social">
+                                  <li><a href="//www.facebook.com/geraldineovalleb" target="_blank"><i class="icon-facebook"></i></a></li>
+                                  <!--  <li><a href="#"><i class="icon-twitter"></i></a></li>
+                                  <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                                  <li><a href="#"><i class="icon-google-plus"></i></a></li>
+                                  <li><a href="#"><i class="icon-pinterest"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                  <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-tumblr"></i></a></li>  -->
+                                </ul>
+<p>O puedes descargar mi currículum a continuación.</p>
+<p class="center margin-top"><a href="//geraldineovalle.com/docs/GeraldineOvalle-CV-2014.pdf" target="_blank" class="symple-button green"><span class="symple-button-inner" >Currículum Geraldine Ovalle (.pdf | 198Kb)</span></a>
+
+
+                              </div><!--container 8-->
+                        </div><!--content-wrapper 8-->
+                    </div><!--bb-custom-side page-8:end-->
+                    
+				</div><!--bb-item-page:7~8:end-->
+                
+			</div><!-- /bb-bookblock -->
+
+		</div><!-- /bb-custom-wrapper -->        
+	</div><!-- /top-wrapper  -->
+    
+    <div id="phone-menu"> <!-- Menu for phone scroll  -->
+      <a class="menu-button">"Show Menu"<div></div><div></div><div></div></a>
+    </div>
+    
+    <div id="menu-wrapper"><!-- Main menu  -->
+    	<span id="close-tip">volver a la portada</span>
+    	<a href="#" id="close-button">×</a>
+        <nav class="outer-nav">
+        	<div id="nav-scroll">
+                <a href="#">Sobre mi</a>
+                <a href="#">Escritos</a>
+                <a href="#">Trabajos</a>
+                <a href="#">Contacto</a>
+            </div>
+        </nav>
+        <span id="menu-copy">&copy; geraldineovalle.com</span>
+    </div><!-- /menu-wrapper  -->
+    
+</div><!-- /top-perspective  -->
+
+<!-- Say no to IE 8 ...  -->
+
+<!--[if lt IE 9]>
+	<div id="say-no-to-ie8"><h3>Sorry, we no longer support your browser anymore :(</h3><h5>Please update it to later version, just like:</h5><span><a target="_blank" href="//windows.microsoft.com/en-us/internet-explorer/download-ie">Newer IE</a></span>|<span><a target="_blank" href="https://www.mozilla.org/en-US/firefox/new/#">Firefox</a></span>|<span><a target="_blank" href="//www.opera.com/computer/windows">Opera</a></span>|<span><a target="_blank" href="https://www.google.com/intl/en/chrome/browser/">Chrome</a></span></div>
+<![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/main-styles.combined.css" />
+       
+	<script src="scripts.js" async></script>
+	<script type="text/javascript" src="js/ga.js" async></script>
+
+</body>
+
+</html>

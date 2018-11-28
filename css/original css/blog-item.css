@@ -1,0 +1,157 @@
+html{
+	height:auto;
+}
+
+.blog-page{
+	width:90%;
+	max-width:960px;
+	min-height:680px;
+	margin:auto;
+	background:#FFF;
+	margin-top:50px;
+	margin-bottom:20px;
+	padding:50px;
+}
+.blog-page img{
+	max-width:100%;
+}
+div.blog-tags{
+	margin-top:20px;
+	margin-bottom:30px;
+}
+.blog-page .blog-tags span{
+	margin-right: 25px;
+	padding-left: 8px;
+	position:relative;
+}
+.blog-page .blog-tags span:before{
+	/*content:"|";*/
+	position:absolute;
+	left:-2px;
+}
+.blog-page p{
+	line-height:1.5em;	
+}
+.blog-page .blog-header{
+	width:100%;
+	border-bottom:1px #ddd solid;
+	padding-bottom: 25px;
+}
+.blog-page .blog-footer{
+	width:100%;
+	margin-top:30px;
+	border-top:1px #ddd solid;
+	padding-top: 10px;
+}
+.blog-header a{
+	color:#aaa;
+	-moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;	
+}
+.blog-header a:hover{
+	color:#888;
+	text-decoration:underline;
+}
+.blog-header a.next-blog{
+	float:right;
+}
+.blog-footer a{
+	color:#aaa;
+	-moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;	
+}
+.blog-footer a:hover{
+	color:#888;
+	text-decoration:underline;
+}
+.blog-footer a.next-blog{
+	float:right;
+}
+.blog-header i.fa, .blog-footer i.fa {
+margin-right: 5px;
+}
+.blog-header i.fa.fa-arrow-right, .blog-footer i.fa.fa-arrow-right {
+margin-left: 5px;margin-right: 0px !important;
+}
+
+/* Flat Button Styles Overrides
+----------------------------------------------------------------------------- */
+.symple-button:active { background:none; -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6); -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6); box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6); }
+.symple-button:hover { opacity: 0.85; text-decoration: none !important; }
+.symple-button {
+	border:none;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: none;
+	cursor: pointer;
+    display: inline-block;
+    margin: 5px 5px 5px 0;
+    text-align: center;
+    text-decoration: none !important;
+	text-shadow:none;
+    white-space: nowrap;
+}
+
+.symple-button span.symple-button-inner {
+	border-top: none;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    line-height: 0.8em;
+    padding: 1.1em 1.4em;
+    text-align: center;
+    text-decoration: none;
+	text-shadow:none;
+    white-space: nowrap;
+	vertical-align:bottom;
+}
+.symple-button.green span.symple-button-inner, .symple-button.orange span.symple-button-inner, .symple-button.blue span.symple-button-inner, .symple-button.red span.symple-button-inner, .symple-button.purple span.symple-button-inner, .symple-button.gray span.symple-button-inner, .symple-button.black span.symple-button-inner {border-top:none;}
+
+.symple-button.green {
+    background: none repeat scroll 0 0 #409F89;
+	border:none;
+    color: #FFFFFF;
+}
+.symple-button.green:active {background: none repeat scroll 0 0 #409F89;}
+.symple-button.orange {
+    background: none repeat scroll 0 0 #f5634a;
+	border:none;
+    color: #FFFFFF;
+}
+.symple-button.orange:active {background: none repeat scroll 0 0 #f5634a;}
+.symple-button.blue {
+    background: none repeat scroll 0 0 #1a99aa;
+	border:none;
+    color: #FFFFFF;
+}
+.symple-button.blue:active {background: none repeat scroll 0 0 #1a99aa;}
+.symple-button.red {
+    background: none repeat scroll 0 0 #E74C3C;
+	border:none;
+    color: #FFFFFF;
+}
+.symple-button.red:active {background: none repeat scroll 0 0 #E74C3C;}
+.symple-button.black {
+    background: none repeat scroll 0 0 #333;
+	border:none;
+    color: #FFFFFF;
+}
+.symple-button.black:active {background: none repeat scroll 0 0 #333;}
+.symple-button.gray {
+    background: none repeat scroll 0 0 #95A5A6;
+	border:none;
+    color: #FFFFFF;
+}
+.symple-button.gray:active {background: none repeat scroll 0 0 #95A5A6;}
+.symple-button.purple {
+    background: none repeat scroll 0 0 #8350C1;
+	border:none;
+    color: #FFFFFF;
+}
+.symple-button.purple:active {background: none repeat scroll 0 0 #8350C1;}
+
+

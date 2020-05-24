@@ -239,8 +239,8 @@
 }
 
 .slide--layout-7 .slide__img-inner {
-	-webkit-clip-path: polygon(0% 100%, 30% 0%, 100% 0%, 70% 100%);
-	clip-path: polygon(0% 100%, 30% 0%, 100% 0%, 70% 100%);
+	-webkit-clip-path: polygon(0% 100%, 30% 0%, 100% 0%, 70% 100%) !important;
+	clip-path: polygon(0% 100%, 30% 0%, 100% 0%, 70% 100%) !important;
 	-webkit-clip-path: url('#polygon-clip-rhomboid');
 	clip-path: url('../index.html#polygon-clip-rhomboid'); /* Firefox needs this path */
 }

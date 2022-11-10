@@ -3,7 +3,7 @@
     <title>Geraldine Ovalle</title>
     <link href="https://www.geraldineovalle.com/feed.xml" rel="self" />
     <link href="https://www.geraldineovalle.com" />
-    <updated>2022-11-10T10:03:37-03:00</updated>
+    <updated>2022-11-10T10:38:22-03:00</updated>
     <author>
         <name>Geraldine</name>
     </author>
@@ -45,7 +45,7 @@
         <link href="https://www.geraldineovalle.com/cv/"/>
         <id>https://www.geraldineovalle.com/cv/</id>
 
-        <updated>2022-11-10T10:03:37-03:00</updated>
+        <updated>2022-11-10T10:38:22-03:00</updated>
             <summary>
                 <![CDATA[
                     Currículum Geraldine Ovalle (.pdf | 198Kb) Desarrollo de un proyecto financiado por FONDART 2014, en Patrimonio inmaterial culinario “HUELLAS Y SABORES DE MUJERES EN LA CORDILLERA” En proceso de término. Elaboración de un recetario del trabajo de investigación patrimonial gastronómica de los participantes del NODO&hellip;
@@ -53,7 +53,7 @@
             </summary>
         <content type="html">
             <![CDATA[
-                <p class="align-center"><a href="https://www.geraldineovalle.com/GeraldineOvalle-CV-2014.pdf" class="btn">Currículum Geraldine Ovalle (.pdf | 198Kb)</a></p>
+                <p class="align-center"><a href="https://www.geraldineovalle.com/GeraldineOvalle-CV-2014.pdf" target="_blank" rel="noopener noreferrer" class="btn">Currículum Geraldine Ovalle (.pdf | 198Kb)</a></p>
 <h2 class="align-center">Trabajo</h2>
 <blockquote>
 <h3>Responsable del proyecto, Fondart Regional</h3>
